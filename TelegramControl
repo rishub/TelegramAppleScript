@@ -30,9 +30,11 @@ on run argv
 		set counts to counts + 1
 		tell application "System Events"
 			keystroke InputPM
+			keystroke space
 			-- keystroke return
 			delay 0.5
 			key code 125 using option down
+			delay 0.5
 		end tell
 		if counts is equal to endSend then set flag to false
 	end repeat
